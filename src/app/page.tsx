@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       <input onChange={(event) => setCreateDate(event.target.value)} value={createDate} />
-      <button disabled={!data || alert} onClick={onClickSubmit}>
+      <button type="button" disabled={!data || alert} onClick={onClickSubmit}>
         Upload
       </button>
     </>
