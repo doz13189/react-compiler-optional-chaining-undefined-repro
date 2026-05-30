@@ -9,7 +9,7 @@ function assert(value: unknown): asserts value {
 }
 
 function validateCreateDate(createDate: string) {
-  if (createDate.trim() === "") {
+  if (!createDate) {
     return undefined;
   }
 
